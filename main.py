@@ -52,6 +52,8 @@ if "checkpoint/challenge/" in currentUrl:
     submitButton = driver.find_element(By.XPATH, "//*[@id='two-step-submit-button']")
     submitButton.click()
 
+
+time.sleep(5)
 driver.find_element(By.XPATH, "//*[@id='ember19']").click()
 time.sleep(5)
 
