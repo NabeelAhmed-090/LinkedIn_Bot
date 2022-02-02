@@ -12,18 +12,6 @@ def connect_button(all_buttons_list):
     return connect_buttons
 
 
-def profile_button(all_buttons_list):
-    for btns in all_buttons_list:
-        if btns.text == "Me":
-            return btns
-
-
-def signOutbtn(all_buttons_list):
-    for btns in all_buttons_list:
-        if btns.text == "Sign Out":
-            return btns
-
-
 ser = Service("C:\\Users\\Dell\\OneDrive\\Desktop\\ChromeDriver\\chromedriver.exe")
 op = webdriver.ChromeOptions()
 driver = webdriver.Chrome(service=ser, options=op)
