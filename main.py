@@ -12,7 +12,8 @@ def connect_button(all_buttons_list):
     return connect_buttons
 
 
-ser = Service("C:\\Users\\Dell\\OneDrive\\Desktop\\ChromeDriver\\chromedriver.exe")
+# use the address where you have stored your chrome driver exe
+ser = Service("enter chromeDriver.exe adresss")
 op = webdriver.ChromeOptions()
 driver = webdriver.Chrome(service=ser, options=op)
 
